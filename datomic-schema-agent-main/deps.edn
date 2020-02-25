@@ -1,0 +1,21 @@
+{:mvn/repos
+ {"my.datomic.com" {:url "https://my.datomic.com/repo"}}
+
+ :deps
+  {org.clojure/tools.cli {:mvn/version "0.4.2"}
+   ; clj-time {:mvn/version "0.14.2"}
+   clj-time {:mvn/version "0.15.2"}
+   me.raynes/fs {:mvn/version "1.4.6"}
+   cheshire {:mvn/version "5.9.0"}
+   com.datomic/client-pro {:mvn/version "0.8.28"}
+   com.datomic/client-cloud {:mvn/version "0.8.78"}
+   com.datomic/datomic-pro {:mvn/version "0.9.5981"}
+   datomic-schema-agent {:mvn/version "0.1.0-SNAPSHOT"}
+   buddy/buddy-core {:mvn/version "1.6.0"}
+
+   ;;compute/datomic-client-memdb {:git/url "https://github.com/ComputeSoftware/datomic-client-memdb.git"
+    ;;                             }
+ }
+
+ :aliases
+  {:dev-mode {:extra-paths ["../datomic-schema-agent/src"]}}}
